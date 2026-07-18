@@ -319,21 +319,25 @@ const business=document.getElementById("business").value;
 const category=document.getElementById("category").value;
 const message=document.getElementById("message").value;
 
-const text=
+ const text=`🛍 Hari Om Fashion New Enquiry
 
-`*Hari Om Fashion Enquiry*%0A%0A
-👤 Name : ${name}%0A
-📞 Mobile : ${phone}%0A
-🏙 City : ${city}%0A
-🛍 Collection : ${category}%0A
-💬 Message : ${message}`;
+👤 Name : ${name}
+
+📞 Mobile : ${phone}
+
+🏙 City : ${city}
+
+🏢 Business : ${business}
+
+🛍 Collection : ${category}
+
+📝 Requirement :
+
+${message}`;
 
 window.open(
-
-`https://wa.me/916359458384?text=${text}`,
-
+`https://wa.me/916359458384?text=${encodeURIComponent(text)}`,
 "_blank"
-
 );
 
 this.reset();
