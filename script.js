@@ -304,7 +304,7 @@ counterObserver.observe(counter);
 WHATSAPP ENQUIRY FORM
 ==========================================*/
 
-const enquiryForm=document.getElementById("enquiryForm");
+const enquiryForm=document.getElementById("whatsappForm");
 
 if(enquiryForm){
 
@@ -315,6 +315,7 @@ e.preventDefault();
 const name=document.getElementById("name").value;
 const phone=document.getElementById("phone").value;
 const city=document.getElementById("city").value;
+const business=document.getElementById("business").value;
 const category=document.getElementById("category").value;
 const message=document.getElementById("message").value;
 
